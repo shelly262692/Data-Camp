@@ -1,0 +1,21 @@
+Defining Customer Churn
+Question:
+As you've just seen in the video, there are many examples and use cases of customer churn. Which of the following are examples of customer churn?
+
+Answer: 5: All of the above
+1. Cancelled a service that is under contract.
+2. Expiration of credit card.
+3. Left a service not under contract.
+4. Purchase from a different store.
+5. All of the above.
+
+Exploring Customer Churn
+Question:
+Now that you know what customer churn is, let's examine the structure of our customer dataset, which has been pre-loaded into a DataFrame called telco. Being able to check the structure of the data is a fundamental step in the churn modeling process and is often overlooked.Use pandas methods such as .info() to get a sense for its structure and notice the different columns (also known as "features" in machine learning),such as 'CustServ_Calls', which denotes the number of customer service calls the customer made, and 'State', which indicates the state the customer is from.One feature is of particular interest to us: 'Churn', which can take in two values - yes and no - indicating whether or not the customer has churned. In this exercise, your job is to explore this feature. You can access it using telco['Churn'].How many churners does the dataset have, and how many non-churners? To easily answer this, you can use the .value_counts() method on telco['Churn'].
+
+Answer: 3:483 Churners and 2850 Non-Churners.
+1. 2850 Churners and 483 Non-Churners.
+2. 21 Churners and 3312 Non-Churners.
+3. 483 Churners and 2850 Non-Churners.
+4. 727 Churners and 2606 Non-Churners.
+
