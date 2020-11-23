@@ -1,0 +1,28 @@
+Question: Group telco by 'Churn' and compute the mean.
+Answer:
+# Group telco by 'Churn' and compute the mean
+print(telco.groupby(['Churn']).mean())
+
+Question:Adapt your code to compute the standard deviation instead of the mean.
+Answer:
+# Adapt your code to compute the standard deviation
+print(telco.groupby(['Churn']).std())
+
+Question:Based on the results you see in the IPython Shell, select the correct statement from the options below.
+Answer: 2. Churners make more customer service calls than non-churners.
+1. Churners leave more voice mail messages than non-churners.
+2. Churners make more customer service calls than non-churners.
+3. Churners leave fewer voice mail messages than non-churners.
+4. Churners make fewer customer service calls than non-churners.
+
+Question: Group telco by 'State', aggregate by 'Churn', and then use value_counts() to count the number of churners and non-churners by state.
+Answer: 
+# Count the number of churners and non-churners by State
+print(telco.groupby('State')['Churn'].value_counts())
+
+Question:Take a look at the output in the IPython Shell and select the correct statement from the options below.
+Answers: 1. California (CA) has 25 non-churners and 9 churners.
+1. California (CA) has 25 non-churners and 9 churners.
+2. Colorado (CO) has 9 non-churners and 57 churners.
+3. Alabama (AL) has 49 non-churners and 3 churners.
+
